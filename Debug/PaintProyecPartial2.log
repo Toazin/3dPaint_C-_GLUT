@@ -1,3 +1,27 @@
-﻿  Piramid.cpp
+﻿  main_paint.cpp
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(193): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(337): warning C4244: 'initializing': conversion from 'float' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(338): warning C4244: 'initializing': conversion from 'float' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(339): warning C4244: 'initializing': conversion from 'float' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(340): warning C4244: 'initializing': conversion from 'float' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(422): warning C4244: '=': conversion from 'GLfloat' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(423): warning C4244: '=': conversion from 'GLfloat' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(433): warning C4244: '=': conversion from 'GLfloat' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(434): warning C4244: '=': conversion from 'GLfloat' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(441): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(447): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(451): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(455): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(459): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(461): warning C4244: '=': conversion from 'GLint' to 'GLfloat', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(462): warning C4244: '=': conversion from 'GLint' to 'GLfloat', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(465): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(474): warning C4805: '==': unsafe mix of type 'GLboolean' and type 'bool' in operation
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(478): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(479): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(490): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(495): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(540): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\toatzin\documents\estudio toa\proyectos\6to\graficas\graficas\paintproyecpartial2\main_paint.cpp(541): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   PaintProyecPartial2.vcxproj -> C:\Users\toatzin\Documents\Estudio TOA\PROYECTOS\6to\Graficas\Graficas\Debug\PaintProyecPartial2.exe
   PaintProyecPartial2.vcxproj -> C:\Users\toatzin\Documents\Estudio TOA\PROYECTOS\6to\Graficas\Graficas\Debug\PaintProyecPartial2.pdb (Full PDB)

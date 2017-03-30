@@ -584,7 +584,7 @@ int main(GLint argc, GLchar **argv)
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 	glutInitWindowSize(width, height);
-	glutCreateWindow("Instance Transformation");
+	glutCreateWindow("3d Aplication - GLUT/OPENGL - 2nd Partial");
 
 	// 1.2 Se definen las funciones callback para el manejo de eventos
 	glutReshapeFunc(resize);
