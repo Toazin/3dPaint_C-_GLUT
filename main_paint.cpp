@@ -53,10 +53,12 @@ list<ObjectGL *> objectList;
 //List Management
 int index = 0;
 ObjectGL * selectedItem;
+int origin = 0;
 
 //Displayed text
 int typeFigure = 0;
 int positionFigure = 0;
+string originText = "Coordinate";
 
 //Menu
 static int window;
@@ -186,7 +188,7 @@ void displayText2()
 	typeFigure = myWork->getType();
 	string typeText = getTypeDescription(typeFigure);
 	//cout << "Index: " << index << endl;
-	string tmp = "Object Type:" + typeText + "(" + to_string(typeFigure) + ") - " + to_string(positionFigure);
+	string tmp = " adsad " + originText + " - Object Types:" + typeText + "(" + to_string(typeFigure) + ") - " + to_string(positionFigure);
 	glColor3ub(0, 255, 0);
 	glRasterPos2i(((width / 2) / 100) - .5, ((height / 2) / 100) - .5);
 	for (size_t i = 0; i < tmp.size(); ++i)
@@ -208,7 +210,7 @@ void displayText()
 	typeFigure = myWork->getType();
 	string typeText = getTypeDescription(typeFigure);
 	//cout << "Index: " << index << endl;
-	string s = "Object Type:" + typeText + "(" + to_string(typeFigure) + ") - " + to_string(positionFigure);
+	string s = originText + " - Object Type:" + typeText + "(" + to_string(typeFigure) + ") - " + to_string(positionFigure);
 
 	glDisable(GL_TEXTURE_2D); //added this
 	glMatrixMode(GL_PROJECTION);
@@ -265,9 +267,6 @@ void render()
 	{
 		(*it)->render();
 	}
-
-	//same as Zoomz = -10.f
-	//gluLookAt(x,0.f,z, 0.f, 0.f, 0.f,0.0,1.f,0.f);
 	
 	displayText();
 	selectedItem = myWork->getSelected();
@@ -373,11 +372,7 @@ void keyboardFunction(unsigned char key, int x, int y)
 			selectedItem->setStyle(GL_FILL);
 			return;
 		}
-
 	}
-
-	//cout << key << " key press " << "x = " << x << " y = " << y << endl;
-
 }
 
 void specialKeyboard(int key, int x, int y) {
@@ -396,7 +391,19 @@ void specialKeyboard(int key, int x, int y) {
 			index = index - 1;
 			myWork->setSelected(index);
 		}
-		//glutPostRedisplay();
+		return;
+	}
+	if (key == 112) {
+		cout << "SHIFT: " <<  origin << endl;
+		if (origin != 1) {
+			originText = "Origin";
+			origin = 1;
+		}
+		else {
+			originText = "Coordinate";
+			origin = 0;
+		}
+		glutPostRedisplay();
 		return;
 	}
 }
@@ -491,17 +498,6 @@ void mouseWheel(int button, int dir, int x, int y)
 	return;
 }
 
-void idle() {
-	/*
-	rot = rot + deltaR;
-
-	x = 10 * sin(rot);
-	z = 10 * cos(rot);
-	glutPostRedisplay(); //Funcion que llama a render
-	*/
-
-}
-
 //MENU
 void menu(int num) {
 	//cout << " Menu Press:  " << num << endl;
@@ -526,8 +522,13 @@ void menu(int num) {
 		float ya = ((rightY - (height / 2)) / (1350 / zoomZ));
 
 		cout << "Posx: " << mouseX << "Posy: " << mouseY << endl;
-
-		myWork->addFigure(num, mouseX, mouseY);
+		if (origin == 1) {
+			myWork->addFigure(num, 0, 0);
+		}
+		else {
+			myWork->addFigure(num, mouseX, mouseY);
+		}
+		
 		break;
 	}
 	glutPostRedisplay();
@@ -590,7 +591,6 @@ int main(GLint argc, GLchar **argv)
 	glutDisplayFunc(render);
 	glutMouseFunc(mouse);
 	glutMotionFunc(mouseMotion);
-	glutIdleFunc(idle);
 	glutKeyboardFunc(keyboardFunction);
 	glutSpecialFunc(specialKeyboard);
 	glutMouseWheelFunc(mouseWheel);
